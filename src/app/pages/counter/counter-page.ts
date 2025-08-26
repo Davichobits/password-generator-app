@@ -8,4 +8,7 @@ export class CounterPageComponent {
   increaseBy(value: number) {
     this.counter += value;
   }
+  resetCounter(){
+    this.counter = 10;
+  }
 }

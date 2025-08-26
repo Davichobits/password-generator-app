@@ -1,5 +1,24 @@
-<h1>Counter: {{ counter }}</h1>
-<button class="bg-amber-500 px-3 rounded-2xl hover:bg-amber-600 cursor-pointer"
-        (click)="increaseBy(1)">
-  +1
-</button>
+<h1 class="text-center mb-6">Counter: {{ counter }}</h1>
+<div class="flex gap-2">
+  
+  <button 
+    class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer"
+    (click)="increaseBy(-1)"
+  >
+    -1
+  </button>
+  
+  <button 
+    class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer"
+    (click)="resetCounter()"
+  >
+    Reset
+  </button>
+  
+  <button 
+    class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer"
+    (click)="increaseBy(1)"
+  >
+    +1
+  </button>
+</div>
