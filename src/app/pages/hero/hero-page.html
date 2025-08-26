@@ -1,0 +1,38 @@
+<h1 class="text-center">{{ name() }}</h1>
+
+<dl class="mb-6">
+  <dt class="text-Green-200">Nombre:</dt>
+  <dd class="pl-10">{{ name() }}</dd>
+
+  <dt class="text-Green-200">Edad:</dt>
+  <dd class="pl-10">{{ age() }}</dd>
+
+  <dt class="text-Green-200">Método:</dt>
+  <dd class="pl-10">{{ heroDescription() }}</dd>
+
+  <dt class="text-Green-200">Capitalizado:</dt>
+  <dd class="pl-10"> {{ capitalized() }} </dd>
+</dl>
+
+<div class="flex gap-2">
+  <button 
+    class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer" 
+    (click)="changeHero()"
+  >
+    Cambiar nombre
+  </button>
+
+  <button 
+    class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer"
+    (click)="changeAge()"
+  >
+    Cambiar edad
+  </button>
+
+  <button
+    class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer" 
+    (click)="resetForm()"
+  >
+    Reset
+  </button>
+</div>
