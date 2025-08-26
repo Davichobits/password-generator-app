@@ -1,4 +1,5 @@
-<h1 class="text-center mb-6">Counter: {{ counter }}</h1>
+<h1 class="text-center">Counter: {{ counter }}</h1>
+<h2 class="text-center mb-6">CounterSignal: {{ counterSignal() }}</h2>
 <div class="flex gap-2">
   
   <button 
@@ -7,7 +8,7 @@
   >
     -1
   </button>
-  
+
   <button 
     class="bg-amber-500 text-Grey-850 px-3 rounded-sm hover:bg-amber-600 cursor-pointer"
     (click)="resetCounter()"
