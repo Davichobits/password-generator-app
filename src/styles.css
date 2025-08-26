@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url("/assets/fonts/JetBrainsMono-VariableFont_wght.ttf") format("woff2");
+}
+
+@theme {
+  --color-Black: #000000;
+  --color-White: #ffffff;
+  --color-Grey-200: #E6E5EA;
+  --color-Grey-600: #817D92;
+  --color-Grey-700: #54535B;
+  --color-Grey-800: #24232C;
+  --color-Grey-850: #18171F;
+  --color-Grey-900: #14131B;
+  --color-Grey-950: #08070B;
+  --color-Green-200: #A4FFAF;
+  --color-Yellow-300: #F8CD65;
+  --color-Orange-400: #FB7C58;
+  --color-Red-500: #F64A4A;
+  --color-Gradient-1: #14131B;
+  --color-Gradient-2: #08070B;
+
+  --font-JetBrains-Mono: "JetBrains Mono";
+}
