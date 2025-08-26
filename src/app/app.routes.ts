@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { CounterPageComponent, PasswordGeneratorPageComponent } from './pages';
+import { CounterPageComponent, HeroPageComponent, PasswordGeneratorPageComponent } from './pages';
 
 export const routes: Routes = [
   {
@@ -9,5 +9,9 @@ export const routes: Routes = [
   {
     path: 'counter',
     component: CounterPageComponent,
+  },
+  {
+    path: 'hero',
+    component: HeroPageComponent,
   }
 ];
